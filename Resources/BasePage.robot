@@ -10,10 +10,10 @@ ${BROWSER}      Chrome
 ***Keywords
 Start Session
     Open Browser            about:blank     ${BROWSER}
-    Go To           ${BASEURL}
-    ${PageTitle}        Get Title
-    Log     ${PageTitle}
-    Sleep       5
+    Go To                   ${BASEURL}
+    ${PageTitle}            Get Title
+    Log                     ${PageTitle}
+    Sleep                    5
 
 
 Close Session
