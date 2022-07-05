@@ -18,3 +18,15 @@ pulo o tutorial
 
 a tela inicial é exibida
     Wait Until Element is Visible        ${menu}
+
+acesso a pagina
+    Sleep   5
+
+verifico a pagina de tutorial
+    Wait Until Element Is Visible       ${samImg}
+
+verifico o texto da pagina 1 do tutorial
+    #Element Text Should Be           ${setp1}        Venha navegar numa casa inteligente equipada com todos os dispositivos Samsung que podem ser controlados com a aplicação SmartThings.
+    Page Should Contain              Venha navegar numa casa inteligente equipada com todos os dispositivos Samsung que podem ser controlados com a aplicação SmartThings.
+
+Verifico o texto da pagina 2 do tutorial
