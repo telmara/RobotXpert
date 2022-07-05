@@ -1,11 +1,10 @@
 ***Variables
-${samImg}                  //img[@alt='SAM']
-#${setp1}                  //class=chakra-text css-dglpph
-${pularTutorial}          //p[text()='PULAR TUTORIAL']
-${menu}                   //div[@class='css-1sk0jlc']//img[1]
 ${iconemapa}              //div[@class='css-9o6pl1']//img[1]     
 ${mapa}                   //p[@class='chakra-text css-4jfxue']
+${mapaBoard}              class=css-1dqlisw
+${mapaQuartoBoard}              css=.css-14kaamv div:nth-child(2)
 ${transporta_quarto}      //div[@class='css-8fsgxv']/following-sibling::div[1]
+
 #${quarto}                   (falta elemento)
 
 
