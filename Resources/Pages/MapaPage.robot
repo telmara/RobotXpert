@@ -2,8 +2,9 @@
 ${iconemapa}              //div[@class='css-9o6pl1']//img[1]     
 ${mapa}                   //p[@class='chakra-text css-4jfxue']
 ${mapaBoard}              class=css-1dqlisw
-${mapaQuartoBoard}              css=.css-14kaamv div:nth-child(2)
-${salaEstarBoard}              css=.css-14kaamv div:nth-child(1)
+${mapaQuartoBoard2}            //div[@class='css-1bpiwxr']/following-sibling::div[1]
+${salaEstarBoard}               css-1bpiwxr
+${mapaQuartoBoard}              //div[@class='css-1bpiwxr']/following-sibling::div[1]
 ${salaJantarBoard}              css=.css-14kaamv div:nth-child(3)
 ${salaJogosBoard}              css=.css-14kaamv div:nth-child(4)
 ${lavanderiaBoard}              css=.css-14kaamv div:nth-child(5)
@@ -11,10 +12,8 @@ ${escritorioBoard}              css=.css-14kaamv div:nth-child(6)
 ${getTogetherBoard}              css=.css-14kaamv div:nth-child(7)
 ${academiaBoard}              css=.css-14kaamv div:nth-child(8)
 ${academiaBoard}              css=.css-14kaamv div:nth-child(7)
-${cozinhaBoard}              css=.css-14kaamv div:nth-child(17)
+${cozinhaBoard}              //div[@class='css-1rglrvx']/following-sibling::div[1]
 ${transporta_quarto}      //div[@class='css-8fsgxv']/following-sibling::div[1]
-
-#${quarto}                   (falta elemento)
 
 
 ***Keywords
@@ -39,6 +38,32 @@ vejo o mapa
      Wait Until Element is Visible        ${mapa}
 
 clico no comodo quarto
-    Click Element                        ${transporta_quarto}   
+    Click Element                        ${mapaQuartoBoard2} 
+    Sleep   5
 
-#o quarto é exibido                   ${quarto}
+clico no comodo salaEstar
+   Click Element                         ${salaEstarBoard}
+
+clico no comodo cozinha
+    Click Element                       ${cozinhaBoard}
+
+clico no comodo gaming
+    Click Element                        ${salaJogosBoard}
+
+clico no comodo academia
+   Click Element                         ${academiaBoard} 
+
+
+clico no comodo lavanderia
+   Click Element                        ${lavanderiaBoard} 
+
+clico no comodo getTogether
+   Click Element                        ${getTogetherBoard}
+
+
+clico no comodo escritorio
+   Click Element                         ${escritorioBoard} 
+
+
+clico no comodo salaJantar
+   Click Element                         ${salaJantarBoard}
