@@ -1,18 +1,19 @@
 ***Variables
 ${iconemapa}              //div[@class='css-9o6pl1']//img[1]     
-${mapa}                   //p[@class='chakra-text css-4jfxue']
+${mapa}                   (//button[@aria-label='Close']//..//div)[1]
 ${mapaBoard}              class=css-1dqlisw
 ${mapaQuartoBoard2}            //div[@class='css-1bpiwxr']/following-sibling::div[1]
-${salaEstarBoard}               css-1bpiwxr
-${mapaQuartoBoard}              //div[@class='css-1bpiwxr']/following-sibling::div[1]
-${salaJantarBoard}              css=.css-14kaamv div:nth-child(3)
-${salaJogosBoard}              css=.css-14kaamv div:nth-child(4)
-${lavanderiaBoard}              css=.css-14kaamv div:nth-child(5)
-${escritorioBoard}              css=.css-14kaamv div:nth-child(6)
+${salaEstarBoard}              (//button[@aria-label='Close']//..//div)[1]//div[2]
+${mapaQuartoBoard}              (//button[@aria-label='Close']//..//div)[1]//div[3]
+${salaJantarBoard}              (//button[@aria-label='Close']//..//div)[1]//div[1]
+${salaJogosBoard}              (//button[@aria-label='Close']//..//div)[1]//div[4]
+${lavanderiaBoard}             (//button[@aria-label='Close']//..//div)[1]//div[6]
+${areaDeLazerBoard}             (//button[@aria-label='Close']//..//div)[1]//div[7]
+${escritorioBoard}              (//button[@aria-label='Close']//..//div)[1]//div[5]
 ${getTogetherBoard}              css=.css-14kaamv div:nth-child(7)
-${academiaBoard}              css=.css-14kaamv div:nth-child(8)
-${academiaBoard}              css=.css-14kaamv div:nth-child(7)
-${cozinhaBoard}              //div[@class='css-1rglrvx']/following-sibling::div[1]
+${academiaBoard}              (//button[@aria-label='Close']//..//div)[1]//div[8]
+${lougeBoard}              (//button[@aria-label='Close']//..//div)[1]//div[9]
+${cozinhaBoard}             (//button[@aria-label='Close']//..//div)[1]//div[18]
 ${transporta_quarto}      //div[@class='css-8fsgxv']/following-sibling::div[1]
 
 
