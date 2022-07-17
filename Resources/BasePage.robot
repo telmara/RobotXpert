@@ -3,6 +3,7 @@ Documentation     This is the main page for the project
 Library         SeleniumLibrary
 Resource        Pages/TutorialPage.robot
 Resource        Pages/MapaPage.robot
+Resource        Pages/ConfiguracoesPage.robot
 
 
 ***Variables
@@ -17,7 +18,7 @@ Start Session
     ${PageTitle}            Get Title
     Log                     ${PageTitle}
     Maximize Browser Window
-    Sleep                    5
+    Sleep                    7
 
 
 Close Session

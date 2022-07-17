@@ -5,7 +5,7 @@ Suite Teardown  Close Session
 
 ***Test Cases
 Scenario 1 - Test Tutorial
-    [Tags]          doing
+
     Given acesso a pagina
     And verifico a pagina inicial
     And pulo o tutorial
