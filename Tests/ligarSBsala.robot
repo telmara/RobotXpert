@@ -5,13 +5,13 @@ Suite Teardown  Close Session
 
 ***Test Cases
 
-Scenario 1 - Testa Acessar mapa
-    [Tags]          doing
+Scenario 1 - Ligar ar da sala
+    [Tags]          test
     Given acesso a pagina
     And verifico a pagina inicial
     And pulo o tutorial
     And a tela inicial é exibida
-    And eu clico no icone mapa
-    And vejo o mapa
-    And clico no comodo quarto
-    And clico na lupa
+    And clico na lupa da soundbar
+    And clico Abrir no SmartThings
+    And clico em ligar soundbar
+    Then ela é conectada

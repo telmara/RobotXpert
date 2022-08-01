@@ -1,155 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.7.3 on win32)" generated="20220716 22:28:50.486" rpa="false" schemaversion="3">
-<suite id="s1" name="abrirLupa" source="C:\ProjetoVRHome\RobotXpert\Tests\abrirLupa.robot">
+<robot generator="Robot 5.0.1 (Python 3.7.3 on win32)" generated="20220801 13:02:17.248" rpa="false" schemaversion="3">
+<suite id="s1" name="ligarSBsala" source="C:\ProjetoVRHome\RobotXpert\Tests\ligarSBsala.robot">
 <kw name="Start Session" library="BasePage" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220716 22:28:50.755" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220716 22:28:50.753" endtime="20220716 22:28:52.067"/>
+<msg timestamp="20220801 13:02:18.690" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220801 13:02:18.685" endtime="20220801 13:02:22.891"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${BASEURL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220716 22:28:52.067" level="INFO">Opening url 'https://d2fnnoijlny9vq.cloudfront.net/'</msg>
-<status status="PASS" starttime="20220716 22:28:52.067" endtime="20220716 22:28:55.507"/>
+<msg timestamp="20220801 13:02:22.895" level="INFO">Opening url 'https://d2fnnoijlny9vq.cloudfront.net/'</msg>
+<status status="PASS" starttime="20220801 13:02:22.893" endtime="20220801 13:02:25.779"/>
 </kw>
 <kw name="Get Title" library="SeleniumLibrary">
 <var>${PageTitle}</var>
 <doc>Returns the title of the current page.</doc>
-<msg timestamp="20220716 22:28:55.515" level="INFO">${PageTitle} = Unity WebGL Player | SmartThingsDemo</msg>
-<status status="PASS" starttime="20220716 22:28:55.507" endtime="20220716 22:28:55.515"/>
+<msg timestamp="20220801 13:02:25.815" level="INFO">${PageTitle} = Samsung Smart Home</msg>
+<status status="PASS" starttime="20220801 13:02:25.780" endtime="20220801 13:02:25.815"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${PageTitle}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220716 22:28:55.515" level="INFO">Unity WebGL Player | SmartThingsDemo</msg>
-<status status="PASS" starttime="20220716 22:28:55.515" endtime="20220716 22:28:55.515"/>
+<msg timestamp="20220801 13:02:25.817" level="INFO">Samsung Smart Home</msg>
+<status status="PASS" starttime="20220801 13:02:25.816" endtime="20220801 13:02:25.818"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220716 22:28:55.516" endtime="20220716 22:28:55.632"/>
+<status status="PASS" starttime="20220801 13:02:25.819" endtime="20220801 13:02:25.979"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>7</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220716 22:29:02.643" level="INFO">Slept 7 seconds</msg>
-<status status="PASS" starttime="20220716 22:28:55.632" endtime="20220716 22:29:02.643"/>
+<msg timestamp="20220801 13:02:32.988" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20220801 13:02:25.979" endtime="20220801 13:02:32.989"/>
 </kw>
-<status status="PASS" starttime="20220716 22:28:50.752" endtime="20220716 22:29:02.643"/>
+<status status="PASS" starttime="20220801 13:02:18.680" endtime="20220801 13:02:32.990"/>
 </kw>
-<test id="s1-t1" name="Scenario 1 - Testa Acessar mapa" line="8">
+<test id="s1-t1" name="Scenario 1 - Ligar ar da sala" line="8">
 <kw name="Given acesso a pagina" library="MapaPage">
 <kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
+<arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220716 22:29:07.648" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220716 22:29:02.645" endtime="20220716 22:29:07.648"/>
+<msg timestamp="20220801 13:02:43.015" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220801 13:02:33.001" endtime="20220801 13:02:43.015"/>
 </kw>
-<status status="PASS" starttime="20220716 22:29:02.645" endtime="20220716 22:29:07.648"/>
+<status status="PASS" starttime="20220801 13:02:33.000" endtime="20220801 13:02:43.016"/>
 </kw>
 <kw name="And verifico a pagina inicial" library="MapaPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${samImg}</arg>
+<arg>${mapa.samImg}</arg>
+<arg>15</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220716 22:29:07.650" endtime="20220716 22:29:07.700"/>
+<status status="PASS" starttime="20220801 13:02:43.018" endtime="20220801 13:02:47.314"/>
 </kw>
-<status status="PASS" starttime="20220716 22:29:07.649" endtime="20220716 22:29:07.700"/>
+<status status="PASS" starttime="20220801 13:02:43.017" endtime="20220801 13:02:47.315"/>
 </kw>
-<kw name="And pulo o tutorial" library="MapaPage">
+<kw name="And pulo o tutorial" library="TutorialPage">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${pularTutorial}</arg>
+<arg>${tutorial.pularTutorial}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220716 22:29:07.704" level="INFO">Clicking element '//p[text()='PULAR TUTORIAL']'.</msg>
-<status status="PASS" starttime="20220716 22:29:07.703" endtime="20220716 22:29:07.803"/>
+<msg timestamp="20220801 13:02:47.330" level="INFO">Clicking element '//p[text()='PULAR TUTORIAL']'.</msg>
+<status status="PASS" starttime="20220801 13:02:47.323" endtime="20220801 13:02:49.583"/>
 </kw>
-<status status="PASS" starttime="20220716 22:29:07.702" endtime="20220716 22:29:07.805"/>
+<status status="PASS" starttime="20220801 13:02:47.322" endtime="20220801 13:02:49.584"/>
 </kw>
-<kw name="And a tela inicial é exibida" library="MapaPage">
+<kw name="And a tela inicial é exibida" library="TutorialPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${menu}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220716 22:29:07.809" endtime="20220716 22:29:08.530"/>
-</kw>
-<status status="PASS" starttime="20220716 22:29:07.808" endtime="20220716 22:29:08.530"/>
-</kw>
-<kw name="And eu clico no icone mapa" library="MapaPage">
-<kw name="Sleep" library="BuiltIn">
+<arg>${tutorial.menu}</arg>
 <arg>7</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220716 22:29:15.561" level="INFO">Slept 7 seconds</msg>
-<status status="PASS" starttime="20220716 22:29:08.559" endtime="20220716 22:29:15.562"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${iconemapa}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220716 22:29:15.563" level="INFO">Clicking element '//div[@class='css-9o6pl1']//img[1]'.</msg>
-<status status="PASS" starttime="20220716 22:29:15.562" endtime="20220716 22:29:16.683"/>
-</kw>
-<status status="PASS" starttime="20220716 22:29:08.558" endtime="20220716 22:29:16.684"/>
-</kw>
-<kw name="And vejo o mapa" library="MapaPage">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${mapa}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220716 22:29:16.687" endtime="20220716 22:29:17.910"/>
+<status status="PASS" starttime="20220801 13:02:49.589" endtime="20220801 13:02:50.672"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220716 22:29:19.911" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220716 22:29:17.910" endtime="20220716 22:29:19.911"/>
+<status status="PASS" starttime="20220801 13:02:49.586" endtime="20220801 13:02:50.673"/>
 </kw>
-<status status="PASS" starttime="20220716 22:29:16.685" endtime="20220716 22:29:19.912"/>
+<kw name="And clico na lupa da soundbar">
+<msg timestamp="20220801 13:02:50.684" level="FAIL">Multiple keywords with name 'clico na lupa da soundbar' found. Give the full name of the keyword you want to use:
+    LigarSBsalaPage.clico na lupa da soundbar
+    ValidarSBsalaPage.clico na lupa da soundbar</msg>
+<status status="FAIL" starttime="20220801 13:02:50.681" endtime="20220801 13:02:50.686"/>
 </kw>
-<kw name="And clico no comodo quarto" library="MapaPage">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${mapaQuartoBoard}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220716 22:29:19.915" level="INFO">Clicking element 'id:map-space-bedroom'.</msg>
-<status status="PASS" starttime="20220716 22:29:19.915" endtime="20220716 22:29:22.227"/>
+<kw name="And clico Abrir no SmartThings" library="LigarSBsalaPage">
+<status status="NOT RUN" starttime="20220801 13:02:50.694" endtime="20220801 13:02:50.694"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220716 22:29:24.228" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220716 22:29:22.227" endtime="20220716 22:29:24.228"/>
+<kw name="And clico em ligar soundbar" library="LigarSBsalaPage">
+<status status="NOT RUN" starttime="20220801 13:02:50.700" endtime="20220801 13:02:50.700"/>
 </kw>
-<status status="PASS" starttime="20220716 22:29:19.914" endtime="20220716 22:29:24.228"/>
+<kw name="Then ela é conectada">
+<status status="NOT RUN" starttime="20220801 13:02:50.739" endtime="20220801 13:02:50.740"/>
 </kw>
-<kw name="And clico na lupa">
-<msg timestamp="20220716 22:29:24.236" level="FAIL">No keyword with name 'And clico na lupa' found. Did you try using keyword 'ConfiguracoesPage.' or 'TutorialPage.' and forgot to use enough whitespace between keyword and arguments?</msg>
-<status status="FAIL" starttime="20220716 22:29:24.235" endtime="20220716 22:29:24.236"/>
-</kw>
-<tag>doing</tag>
-<status status="FAIL" starttime="20220716 22:29:02.644" endtime="20220716 22:29:24.237">No keyword with name 'And clico na lupa' found. Did you try using keyword 'ConfiguracoesPage.' or 'TutorialPage.' and forgot to use enough whitespace between keyword and arguments?</status>
+<tag>test</tag>
+<status status="FAIL" starttime="20220801 13:02:32.993" endtime="20220801 13:02:50.760">Multiple keywords with name 'clico na lupa da soundbar' found. Give the full name of the keyword you want to use:
+    LigarSBsalaPage.clico na lupa da soundbar
+    ValidarSBsalaPage.clico na lupa da soundbar</status>
 </test>
 <kw name="Close Session" library="BasePage" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220716 22:29:26.381" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220716 22:29:24.242" endtime="20220716 22:29:26.381"/>
+<msg timestamp="20220801 13:02:57.040" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220801 13:02:50.804" endtime="20220801 13:02:57.040"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220716 22:29:26.381" endtime="20220716 22:29:29.415"/>
+<status status="PASS" starttime="20220801 13:02:57.042" endtime="20220801 13:03:01.355"/>
 </kw>
-<status status="PASS" starttime="20220716 22:29:24.241" endtime="20220716 22:29:29.415"/>
+<status status="PASS" starttime="20220801 13:02:50.795" endtime="20220801 13:03:01.356"/>
 </kw>
-<status status="FAIL" starttime="20220716 22:28:50.488" endtime="20220716 22:29:29.415"/>
+<status status="FAIL" starttime="20220801 13:02:17.258" endtime="20220801 13:03:01.356"/>
 </suite>
 <statistics>
 <total>
 <stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">doing</stat>
+<stat pass="0" fail="1" skip="0">test</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="abrirLupa">abrirLupa</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="ligarSBsala">ligarSBsala</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220801 13:02:18.666" level="ERROR">Error in file 'C:\ProjetoVRHome\RobotXpert\Resources\BasePage.robot' on line 21: Resource file 'Pages\CoresPage.robot' does not exist.</msg>
 </errors>
 </robot>
