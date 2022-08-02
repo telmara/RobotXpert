@@ -58,7 +58,7 @@ clico na lupa da tv da sala
     Execute Javascript                  window.openWindow('device', '{"device":"livingroom/tv"}');
     Sleep                               5
 modal da tv é aberto
-    Page Should Contain                  Samsung Smart TV QLED 4K The Frame
+    Page Should Contain                  TV da Sala
 
 verifico o modelo da tv
     Page Should Contain                  Samsung Smart TV QLED 4K The Frame

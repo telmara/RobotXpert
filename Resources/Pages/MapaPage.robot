@@ -8,18 +8,18 @@ Resource       ../BasePage.robot
 &{mapa}
 ...     samImg=//img[@alt='SAM']
 ...     iconemapa=//div[@class='css-13dls4l']//div[1]
-...     mapa=//button[@aria-label='Close']//..//div)[1]
+...     mapa=//div[@id='root']/div[3]
 ...     mapaBoard=//css-1dqlisw
-...     mapaQuartoBoard=//map-space-bedroom
-...     salaEstarBoard=//map-space-livingroom
+...     mapaQuartoBoard=map-space-bedroom
+...     salaEstarBoard=map-space-livingroom
 ...     salaJantarBoard=map-space-dining
-...     salaJogosBoard//div[@id='map-space-gaming']
-...     lavanderiaBoard=//map-space-laundry
-...     areaDeLazerBoard=//map-space-together
+...     salaJogosBoard=//div[@id='map-space-gaming']
+...     lavanderiaBoard=map-space-laundry
+...     areaDeLazerBoard=map-space-together
 ...     escritorioBoard=//div[@id='map-space-gaming']/following-sibling::div[1]
-...     academiaBoard=//map-space-fitness
-...     loungeBoard=//map-space-lounge
-...     cozinhaBoard=//map-space-kitchen
+...     academiaBoard=map-space-fitness
+...     loungeBoard=map-space-lounge
+...     cozinhaBoard=map-space-kitchen
 
 # ${iconemapa}                    //div[@class='css-13dls4l']//div[1]   
 # ${mapa}                         (//button[@aria-label='Close']//..//div)[1]
@@ -61,6 +61,7 @@ clico no comodo quarto
 
 
 clico no comodo sala
+    Sleep   7
     Wait Until Element Is Visible         ${mapa.salaEstarBoard}            7
     Click Element                         ${mapa.salaEstarBoard}
 
@@ -72,12 +73,13 @@ clico no comodo gaming
     Click Element                        ${mapa.salaJogosBoard}
  
 clico no comodo academia
-    Wait Until Element Is Visible         ${mapa.academiaBoard}
+    Sleep   7
+    Wait Until Element Is Visible         ${mapa.academiaBoard}                 7
     Click Element                         ${mapa.academiaBoard} 
 
 
 clico no comodo lavanderia
-    Wait Until Element Is Visible       ${mapa.lavanderiaBoard}              7
+    Wait Until Element Is Visible       ${mapa.lavanderiaBoard}                 7
    Click Element                        ${mapa.lavanderiaBoard} 
 
 clico no comodo getTogether
@@ -90,6 +92,7 @@ clico no comodo escritorio
 
 
 clico no comodo salaJantar
+    Sleep   7
     Wait Until Element Is Visible         ${mapa.salaJantarBoard}               7           
     Click Element                         ${mapa.salaJantarBoard}
 

@@ -21,7 +21,7 @@ clico na lupa da tv do escritorio
     Execute Javascript                  window.openWindow('device', '{"device":"office/tv"}');
     Sleep                               5
 modal da tv do escritorio é aberto
-    Page Should Contain                 Samsung Smart TV QLED 4K The Frame    
+    Page Should Contain                 TV do escritório   
 verifico o modelo da tv do escritorio
     Page Should Contain                 Samsung Smart TV QLED 4K The Frame
 verifico a descricao do produto tv do escritorio

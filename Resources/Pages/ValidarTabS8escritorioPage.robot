@@ -10,7 +10,7 @@ clico na lupa do Tab S8 do escritorio
     Execute Javascript                  window.openWindow('device', '{"device":"office/s8"}');
     Sleep                               5
 modal do Tab S8 do escritorio é aberto
-    Page Should Contain                 Samsung Galaxy Tab S8 
+    Page Should Contain                 Tablet Tab S8
 verifico o modelo do Tab S8 do escritorio
     Page Should Contain                 Samsung Galaxy Tab S8
 verifico a descricao do produto Tab S8 do escritorio

@@ -14,7 +14,7 @@ clico na lupa do monitor do escritorio
 modal do monitor é aberto
     Page Should Contain                 Samsung Smart Monitor UHD
 verifico o modelo do monitor
-    Page Should Contain                 Samsung Smart Monitor UHD
+    Page Should Contain                 Monitor
 verifico a descricao do produto monitor
     Page Should Contain                 Viva a experiência de uma Smart TV num monitor com seus aplicativos de TV incorporados. Com uma espessura ultrafina de 11,4 mm, o Smart Monitor M8 se adapta a todos os lugares. Você vai trabalhar sem esforço em documentos, videoconferência e ainda acessar arquivos de PC sem fio.
 troco de cor o monitor

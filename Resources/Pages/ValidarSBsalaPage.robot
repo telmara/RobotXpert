@@ -29,7 +29,7 @@ clico na lupa da soundbar
     sleep                               5
 
 modal da soundbar é aberto
-    Page Should Contain                 Soundbar Samsung HW-Q990B
+    Page Should Contain                 SoundBar da sala
 clico em Ver mais detalhes
     Click Element                       ${botao.verdetalhes}
 verifico o modelo da soundbar
