@@ -1,344 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.11 on win32)" generated="20220709 13:40:35.679" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.11 on win32)" generated="20220802 09:30:27.724" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="C:\Automation\RobotXpert\Tests">
-<suite id="s1-s1" name="pularTutorial" source="C:\Automation\RobotXpert\Tests\pularTutorial.robot">
+<suite id="s1-s1" name="ligarSBsala" source="C:\Automation\RobotXpert\Tests\ligarSBsala.robot">
 <kw name="Start Session" library="BasePage" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220709 13:40:36.469" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220709 13:40:36.469" endtime="20220709 13:40:38.085"/>
+<msg timestamp="20220802 09:30:28.053" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220802 09:30:28.053" endtime="20220802 09:30:31.081"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${BASEURL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220709 13:40:38.086" level="INFO">Opening url 'https://d2fnnoijlny9vq.cloudfront.net/'</msg>
-<status status="PASS" starttime="20220709 13:40:38.085" endtime="20220709 13:40:41.514"/>
+<msg timestamp="20220802 09:30:31.081" level="INFO">Opening url 'https://d2fnnoijlny9vq.cloudfront.net/'</msg>
+<status status="PASS" starttime="20220802 09:30:31.081" endtime="20220802 09:30:32.194"/>
 </kw>
 <kw name="Get Title" library="SeleniumLibrary">
 <var>${PageTitle}</var>
 <doc>Returns the title of the current page.</doc>
-<msg timestamp="20220709 13:40:41.522" level="INFO">${PageTitle} = Unity WebGL Player | SmartThingsDemo</msg>
-<status status="PASS" starttime="20220709 13:40:41.514" endtime="20220709 13:40:41.522"/>
+<msg timestamp="20220802 09:30:32.208" level="INFO">${PageTitle} = Samsung Smart Home</msg>
+<status status="PASS" starttime="20220802 09:30:32.194" endtime="20220802 09:30:32.208"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${PageTitle}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220709 13:40:41.522" level="INFO">Unity WebGL Player | SmartThingsDemo</msg>
-<status status="PASS" starttime="20220709 13:40:41.522" endtime="20220709 13:40:41.522"/>
+<msg timestamp="20220802 09:30:32.209" level="INFO">Samsung Smart Home</msg>
+<status status="PASS" starttime="20220802 09:30:32.208" endtime="20220802 09:30:32.209"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220709 13:40:41.522" endtime="20220709 13:40:41.659"/>
+<status status="PASS" starttime="20220802 09:30:32.209" endtime="20220802 09:30:32.331"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
+<arg>7</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220709 13:40:46.670" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220709 13:40:41.659" endtime="20220709 13:40:46.671"/>
+<msg timestamp="20220802 09:30:39.336" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20220802 09:30:32.331" endtime="20220802 09:30:39.338"/>
 </kw>
-<status status="PASS" starttime="20220709 13:40:36.469" endtime="20220709 13:40:46.671"/>
+<status status="PASS" starttime="20220802 09:30:28.052" endtime="20220802 09:30:39.339"/>
 </kw>
-<test id="s1-s1-t1" name="Scenario 1 - Test Tutorial" line="7">
+<test id="s1-s1-t1" name="Scenario 1 - Ligar ar da sala" line="8">
 <kw name="Given acesso a pagina" library="MapaPage">
 <kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
+<arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220709 13:40:51.683" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220709 13:40:46.680" endtime="20220709 13:40:51.683"/>
+<msg timestamp="20220802 09:30:49.357" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220802 09:30:39.343" endtime="20220802 09:30:49.357"/>
 </kw>
-<status status="PASS" starttime="20220709 13:40:46.680" endtime="20220709 13:40:51.684"/>
+<status status="PASS" starttime="20220802 09:30:39.343" endtime="20220802 09:30:49.357"/>
 </kw>
 <kw name="And verifico a pagina inicial" library="MapaPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${samImg}</arg>
+<arg>${mapa.samImg}</arg>
+<arg>15</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220709 13:40:51.685" endtime="20220709 13:40:51.768"/>
+<status status="PASS" starttime="20220802 09:30:49.368" endtime="20220802 09:30:49.773"/>
 </kw>
-<status status="PASS" starttime="20220709 13:40:51.685" endtime="20220709 13:40:51.768"/>
+<status status="PASS" starttime="20220802 09:30:49.367" endtime="20220802 09:30:49.773"/>
 </kw>
-<kw name="And pulo o tutorial" library="MapaPage">
+<kw name="And pulo o tutorial" library="TutorialPage">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${pularTutorial}</arg>
+<arg>${tutorial.pularTutorial}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220709 13:40:51.770" level="INFO">Clicking element '//p[text()='PULAR TUTORIAL']'.</msg>
-<status status="PASS" starttime="20220709 13:40:51.770" endtime="20220709 13:40:51.820"/>
+<msg timestamp="20220802 09:30:49.778" level="INFO">Clicking element '//p[text()='PULAR TUTORIAL']'.</msg>
+<status status="PASS" starttime="20220802 09:30:49.776" endtime="20220802 09:30:50.333"/>
 </kw>
-<status status="PASS" starttime="20220709 13:40:51.769" endtime="20220709 13:40:51.820"/>
+<status status="PASS" starttime="20220802 09:30:49.775" endtime="20220802 09:30:50.333"/>
 </kw>
-<kw name="Then a tela inicial é exibida" library="MapaPage">
+<kw name="And a tela inicial é exibida" library="TutorialPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${menu}</arg>
+<arg>${tutorial.menu}</arg>
+<arg>7</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220709 13:40:51.821" endtime="20220709 13:40:51.845"/>
+<status status="PASS" starttime="20220802 09:30:50.336" endtime="20220802 09:30:51.297"/>
 </kw>
-<status status="PASS" starttime="20220709 13:40:51.821" endtime="20220709 13:40:51.846"/>
+<status status="PASS" starttime="20220802 09:30:50.334" endtime="20220802 09:30:51.298"/>
 </kw>
-<tag>doing</tag>
-<status status="PASS" starttime="20220709 13:40:46.673" endtime="20220709 13:40:51.846"/>
+<kw name="And clico na lupa da soundbar" library="ValidarSBsalaPage">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.openWindow('device', '{"device":"livingroom/sb"}');</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220802 09:30:51.375" level="INFO">Executing JavaScript:
+window.openWindow('device', '{"device":"livingroom/sb"}');
+Without any arguments.</msg>
+<status status="PASS" starttime="20220802 09:30:51.300" endtime="20220802 09:30:51.765"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220802 09:30:56.779" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220802 09:30:51.766" endtime="20220802 09:30:56.780"/>
+</kw>
+<status status="PASS" starttime="20220802 09:30:51.299" endtime="20220802 09:30:56.780"/>
+</kw>
+<kw name="And clico Abrir no SmartThings" library="LigarSBsalaPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${abrirsmartthings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220802 09:30:56.788" level="INFO">Clicking element '(//div[@class='css-15vvhi4']//div)[3]'.</msg>
+<status status="PASS" starttime="20220802 09:30:56.785" endtime="20220802 09:30:57.552"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220802 09:31:08.136" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220802 09:30:57.552" endtime="20220802 09:31:08.138"/>
+</kw>
+<status status="PASS" starttime="20220802 09:30:56.784" endtime="20220802 09:31:08.576"/>
+</kw>
+<kw name="And clico em ligar soundbar" library="LigarSBsalaPage">
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${smartThingsIframe}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20220802 09:31:10.070" level="INFO">Selecting frame '//iframe[@id='iframe-content'][@title='smart-things']'.</msg>
+<status status="PASS" starttime="20220802 09:31:10.046" endtime="20220802 09:31:10.534"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220802 09:31:16.538" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20220802 09:31:10.534" endtime="20220802 09:31:16.538"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ligarsb}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220802 09:31:16.539" endtime="20220802 09:31:16.752"/>
+</kw>
+<kw name="click with Javascript" library="LigarSBsalaPage">
+<arg>${ligarsb}</arg>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${ele}</var>
+<arg>${webElement}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20220802 09:31:16.848" level="INFO">${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session="113571e2f2112b8d25b0aab1e4eb6dae", element="3ad352fc-296e-4408-832d-827febf92496")&gt;</msg>
+<status status="PASS" starttime="20220802 09:31:16.754" endtime="20220802 09:31:16.849"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${ele}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220802 09:31:16.864" level="INFO">Executing JavaScript:
+arguments[0].click();
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="113571e2f2112b8d25b0aab1e4eb6dae", element="3ad352fc-296e-4408-832d-827febf92496")&gt;'</msg>
+<status status="PASS" starttime="20220802 09:31:16.849" endtime="20220802 09:31:16.987"/>
+</kw>
+<status status="PASS" starttime="20220802 09:31:16.753" endtime="20220802 09:31:16.987"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220802 09:31:21.004" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220802 09:31:16.988" endtime="20220802 09:31:21.005"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20220802 09:31:21.006" endtime="20220802 09:31:21.110"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20220802 09:31:21.110" endtime="20220802 09:31:21.198"/>
+</kw>
+<status status="PASS" starttime="20220802 09:31:10.036" endtime="20220802 09:31:21.199"/>
+</kw>
+<kw name="Then mensagem de missao concluida é exibida" library="LigarSBsalaPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@aria-label='animation']</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220802 09:31:21.203" endtime="20220802 09:31:21.498"/>
+</kw>
+<status status="PASS" starttime="20220802 09:31:21.201" endtime="20220802 09:31:21.498"/>
+</kw>
+<tag>soundbar</tag>
+<status status="PASS" starttime="20220802 09:30:39.340" endtime="20220802 09:31:21.503"/>
 </test>
 <kw name="Close Session" library="BasePage" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220709 13:40:52.057" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220709 13:40:51.847" endtime="20220709 13:40:52.057"/>
+<msg timestamp="20220802 09:31:22.683" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220802 09:31:21.542" endtime="20220802 09:31:22.683"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220709 13:40:52.057" endtime="20220709 13:40:54.821"/>
+<status status="PASS" starttime="20220802 09:31:22.685" endtime="20220802 09:31:25.290"/>
 </kw>
-<status status="PASS" starttime="20220709 13:40:51.847" endtime="20220709 13:40:54.821"/>
+<status status="PASS" starttime="20220802 09:31:21.540" endtime="20220802 09:31:25.291"/>
 </kw>
-<status status="PASS" starttime="20220709 13:40:35.715" endtime="20220709 13:40:54.821"/>
+<status status="PASS" starttime="20220802 09:30:27.745" endtime="20220802 09:31:25.291"/>
 </suite>
-<suite id="s1-s2" name="testaMapa" source="C:\Automation\RobotXpert\Tests\testaMapa.robot">
-<kw name="Start Session" library="BasePage" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220709 13:40:54.836" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220709 13:40:54.835" endtime="20220709 13:40:56.140"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${BASEURL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220709 13:40:56.141" level="INFO">Opening url 'https://d2fnnoijlny9vq.cloudfront.net/'</msg>
-<status status="PASS" starttime="20220709 13:40:56.141" endtime="20220709 13:40:57.056"/>
-</kw>
-<kw name="Get Title" library="SeleniumLibrary">
-<var>${PageTitle}</var>
-<doc>Returns the title of the current page.</doc>
-<msg timestamp="20220709 13:40:57.061" level="INFO">${PageTitle} = Unity WebGL Player | SmartThingsDemo</msg>
-<status status="PASS" starttime="20220709 13:40:57.056" endtime="20220709 13:40:57.061"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${PageTitle}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220709 13:40:57.061" level="INFO">Unity WebGL Player | SmartThingsDemo</msg>
-<status status="PASS" starttime="20220709 13:40:57.061" endtime="20220709 13:40:57.061"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220709 13:40:57.061" endtime="20220709 13:40:57.177"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220709 13:41:02.186" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220709 13:40:57.177" endtime="20220709 13:41:02.186"/>
-</kw>
-<status status="PASS" starttime="20220709 13:40:54.835" endtime="20220709 13:41:02.186"/>
-</kw>
-<test id="s1-s2-t1" name="Scenario 1 - Testa Acessar mapa" line="8">
-<kw name="Given acesso a pagina" library="MapaPage">
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220709 13:41:07.196" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220709 13:41:02.188" endtime="20220709 13:41:07.196"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:02.187" endtime="20220709 13:41:07.196"/>
-</kw>
-<kw name="And verifico a pagina inicial" library="MapaPage">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${samImg}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220709 13:41:07.197" endtime="20220709 13:41:07.231"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:07.197" endtime="20220709 13:41:07.231"/>
-</kw>
-<kw name="And pulo o tutorial" library="MapaPage">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${pularTutorial}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220709 13:41:07.235" level="INFO">Clicking element '//p[text()='PULAR TUTORIAL']'.</msg>
-<status status="PASS" starttime="20220709 13:41:07.234" endtime="20220709 13:41:07.294"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:07.233" endtime="20220709 13:41:07.294"/>
-</kw>
-<kw name="And a tela inicial é exibida" library="MapaPage">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${menu}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220709 13:41:07.295" endtime="20220709 13:41:07.322"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:07.295" endtime="20220709 13:41:07.322"/>
-</kw>
-<kw name="And eu clico no icone mapa" library="MapaPage">
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220709 13:41:12.335" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220709 13:41:07.323" endtime="20220709 13:41:12.335"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${iconemapa}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220709 13:41:12.335" level="INFO">Clicking element '//div[@class='css-9o6pl1']//img[1]'.</msg>
-<status status="PASS" starttime="20220709 13:41:12.335" endtime="20220709 13:41:12.395"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:07.323" endtime="20220709 13:41:12.395"/>
-</kw>
-<kw name="And vejo o mapa" library="MapaPage">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${mapa}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220709 13:41:12.396" endtime="20220709 13:41:12.414"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:12.396" endtime="20220709 13:41:12.414"/>
-</kw>
-<kw name="And clico no comodo quarto" library="MapaPage">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${mapaQuartoBoard2}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220709 13:41:12.416" level="INFO">Clicking element '//div[@class='css-1bpiwxr']/following-sibling::div[1]'.</msg>
-<msg timestamp="20220709 13:41:12.639" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220709 13:41:12.644" level="FAIL">Element with locator '//div[@class='css-1bpiwxr']/following-sibling::div[1]' not found.</msg>
-<status status="FAIL" starttime="20220709 13:41:12.415" endtime="20220709 13:41:12.673"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220709 13:41:12.674" endtime="20220709 13:41:12.674"/>
-</kw>
-<status status="FAIL" starttime="20220709 13:41:12.415" endtime="20220709 13:41:12.674"/>
-</kw>
-<kw name="And eu clico no comodo cozinha">
-<status status="NOT RUN" starttime="20220709 13:41:12.682" endtime="20220709 13:41:12.682"/>
-</kw>
-<kw name="And eu clico no comodo gaming">
-<status status="NOT RUN" starttime="20220709 13:41:12.685" endtime="20220709 13:41:12.685"/>
-</kw>
-<kw name="And eu clico no comodo academia">
-<status status="NOT RUN" starttime="20220709 13:41:12.687" endtime="20220709 13:41:12.688"/>
-</kw>
-<kw name="And eu clico no comodo lavanderia">
-<status status="NOT RUN" starttime="20220709 13:41:12.690" endtime="20220709 13:41:12.690"/>
-</kw>
-<kw name="And eu clico no comodo getTogether">
-<status status="NOT RUN" starttime="20220709 13:41:12.692" endtime="20220709 13:41:12.693"/>
-</kw>
-<status status="FAIL" starttime="20220709 13:41:02.186" endtime="20220709 13:41:12.693">Element with locator '//div[@class='css-1bpiwxr']/following-sibling::div[1]' not found.</status>
-</test>
-<kw name="Close Session" library="BasePage" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220709 13:41:12.900" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220709 13:41:12.695" endtime="20220709 13:41:12.900"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220709 13:41:12.900" endtime="20220709 13:41:15.041"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:12.695" endtime="20220709 13:41:15.041"/>
-</kw>
-<status status="FAIL" starttime="20220709 13:40:54.824" endtime="20220709 13:41:15.041"/>
-</suite>
-<suite id="s1-s3" name="testaTutorial" source="C:\Automation\RobotXpert\Tests\testaTutorial.robot">
-<kw name="Start Session" library="BasePage" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220709 13:41:15.052" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220709 13:41:15.052" endtime="20220709 13:41:16.277"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${BASEURL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220709 13:41:16.277" level="INFO">Opening url 'https://d2fnnoijlny9vq.cloudfront.net/'</msg>
-<status status="PASS" starttime="20220709 13:41:16.277" endtime="20220709 13:41:17.322"/>
-</kw>
-<kw name="Get Title" library="SeleniumLibrary">
-<var>${PageTitle}</var>
-<doc>Returns the title of the current page.</doc>
-<msg timestamp="20220709 13:41:17.330" level="INFO">${PageTitle} = Unity WebGL Player | SmartThingsDemo</msg>
-<status status="PASS" starttime="20220709 13:41:17.322" endtime="20220709 13:41:17.330"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${PageTitle}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220709 13:41:17.331" level="INFO">Unity WebGL Player | SmartThingsDemo</msg>
-<status status="PASS" starttime="20220709 13:41:17.331" endtime="20220709 13:41:17.331"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220709 13:41:17.331" endtime="20220709 13:41:17.453"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220709 13:41:22.464" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220709 13:41:17.453" endtime="20220709 13:41:22.464"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:15.052" endtime="20220709 13:41:22.464"/>
-</kw>
-<test id="s1-s3-t1" name="Scenario 1 - Test Tutorial" line="7">
-<kw name="Given acesso a pagina" library="MapaPage">
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220709 13:41:27.477" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220709 13:41:22.466" endtime="20220709 13:41:27.477"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:22.466" endtime="20220709 13:41:27.477"/>
-</kw>
-<kw name="Then verifico a pagina de tutorial" library="TutorialPage">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${samImg}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220709 13:41:27.479" endtime="20220709 13:41:27.506"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:27.478" endtime="20220709 13:41:27.506"/>
-</kw>
-<kw name="And verifico o texto da pagina 1 do tutorial" library="TutorialPage">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Venha navegar numa casa inteligente equipada com todos os dispositivos Samsung que podem ser controlados com a aplicação SmartThings.</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220709 13:41:27.523" level="INFO">Current page contains text 'Venha navegar numa casa inteligente equipada com todos os dispositivos Samsung que podem ser controlados com a aplicação SmartThings.'.</msg>
-<status status="PASS" starttime="20220709 13:41:27.507" endtime="20220709 13:41:27.523"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:27.506" endtime="20220709 13:41:27.523"/>
-</kw>
-<kw name="And Verifico o texto da pagina 2 do tutorial" library="TutorialPage">
-<msg timestamp="20220709 13:41:27.524" level="FAIL">User keyword 'And Verifico o texto da pagina 2 do tutorial' contains no keywords.</msg>
-<status status="FAIL" starttime="20220709 13:41:27.523" endtime="20220709 13:41:27.524"/>
-</kw>
-<kw name="And Verifico o texto da pagina 3 do tutorial">
-<status status="NOT RUN" starttime="20220709 13:41:27.526" endtime="20220709 13:41:27.526"/>
-</kw>
-<status status="FAIL" starttime="20220709 13:41:22.465" endtime="20220709 13:41:27.526">User keyword 'And Verifico o texto da pagina 2 do tutorial' contains no keywords.</status>
-</test>
-<kw name="Close Session" library="BasePage" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220709 13:41:27.871" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220709 13:41:27.528" endtime="20220709 13:41:27.871"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220709 13:41:27.871" endtime="20220709 13:41:30.007"/>
-</kw>
-<status status="PASS" starttime="20220709 13:41:27.528" endtime="20220709 13:41:30.007"/>
-</kw>
-<status status="FAIL" starttime="20220709 13:41:15.045" endtime="20220709 13:41:30.007"/>
-</suite>
-<status status="FAIL" starttime="20220709 13:40:35.681" endtime="20220709 13:41:30.010"/>
+<status status="PASS" starttime="20220802 09:30:27.727" endtime="20220802 09:31:25.297"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="2" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">doing</stat>
+<stat pass="1" fail="0" skip="0">soundbar</stat>
 </tag>
 <suite>
-<stat pass="1" fail="2" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="pularTutorial">Tests.pularTutorial</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s2" name="testaMapa">Tests.testaMapa</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s3" name="testaTutorial">Tests.testaTutorial</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="ligarSBsala">Tests.ligarSBsala</stat>
 </suite>
 </statistics>
 <errors>
