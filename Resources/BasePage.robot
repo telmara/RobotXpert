@@ -41,7 +41,7 @@ Start Session
     ${PageTitle}            SeleniumLibrary.Get Title
     Log                     ${PageTitle}
     Maximize Browser Window
-    Sleep                    7
+    Sleep                    6
 
 
 Close Session
