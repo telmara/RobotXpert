@@ -6,7 +6,7 @@ Suite Teardown  Close Session
 ***Test Cases
 
 Scenario 1 - Ligar ar da sala
-    [Tags]          test
+    [Tags]          soundbar
     Given acesso a pagina
     And verifico a pagina inicial
     And pulo o tutorial
@@ -14,4 +14,5 @@ Scenario 1 - Ligar ar da sala
     And clico na lupa da soundbar
     And clico Abrir no SmartThings
     And clico em ligar soundbar
-    Then ela é conectada
+    Then mensagem de missao concluida é exibida 
+    # Then ela é conectada

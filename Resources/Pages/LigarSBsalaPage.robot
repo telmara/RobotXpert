@@ -1,8 +1,9 @@
 
 ***Variables***
 
-${abrirsmartthings}      (//div[@class='css-15vvhi4']//div)[3]
-${ligarsb}               //p[text()='Cool']/following-sibling::div
+${abrirsmartthings}          (//div[@class='css-15vvhi4']//div)[3]
+${ligarsb}                   //div[@id='power-button']
+${smartThingsIframe}        //iframe[@id='iframe-content'][@title='smart-things']
 
 
                   ######### Não Funciona botão ligar (iframe)#########
@@ -13,21 +14,21 @@ ${ligarsb}               //p[text()='Cool']/following-sibling::div
     
 clico Abrir no SmartThings
      Click Element                       ${abrirsmartthings}
-     Sleep                               10
+     Sleep                               10        #TODO Remove this later
 
 clico em ligar soundbar
 
-     # Wait Until Element is Visible          //button[@class='css-jqif27']/following-sibling::div[1]       20
-     #Click Element                           ${ligarsb}
-     # Wait Until Element is Visible           id=iframe-content             20
-     Select Frame                            //button[@class='css-jqif27']/following-sibling::div[1]
-     # #Wait Until Element is Visible           xpath=//*[name()='iframe' and @id='iframe-content']          20
-     Unselect Frame 
-     Select Frame                           id=power-button
-     Wait Until Element is Visible            ${ligarsb}              20
-     Click button                             ${ligarsb}              20                          
+     Select Frame                             ${smartThingsIframe}
+     Sleep                                    6     #TODO Remove this later                       
+     Wait Until Element is Visible            ${ligarsb}              ${TIMEOUT}
+     click with Javascript                    ${ligarsb}
+     Sleep                                    4      #TODO Remove this later                    
+     Unselect Frame
 
-     #Click Element                          xpath=//*[name()='iframe' and @id='iframe-content']
-     #Click Element                          xpath=//*[@id='iframe-content' and @id='power-button']
+mensagem de missao concluida é exibida 
+     Wait Until Element is Visible            //div[@aria-label='animation']        ${TIMEOUT}
 
-     #Select Frame                           id:iframe-content
+click with Javascript
+    [arguments]        ${webElement}
+    ${ele}                                Get WebElement    ${webElement}
+     Execute Javascript                    arguments[0].click();     ARGUMENTS    ${ele}

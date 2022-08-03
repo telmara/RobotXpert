@@ -29,8 +29,9 @@ Resource        Pages/ValidarMonitorGamesPage.robot
 
 
 ***Variables***
-${BASEURL}      https://d2fnnoijlny9vq.cloudfront.net/
-${BROWSER}      Chrome
+${BASEURL}          https://d2fnnoijlny9vq.cloudfront.net/
+${BROWSER}          Chrome
+${TIMEOUT}          20
 
 
 ***Keywords***
