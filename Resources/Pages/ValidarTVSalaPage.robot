@@ -10,47 +10,31 @@ Resource       ../BasePage.robot
 
 ...     tvtheframe=//div[@class='css-gqywud']//div[1]
 ...     tv43=//div[text()='43"']
-...     tv50=//div[text()='50"'] 
-...     tv55=//div[text()='55"']
+...     tv50=size-0
+...     tv55=size-1
 ...     tv255=//div[text()=' 55"']
-...     tv65=//div[text()='65"']
+...     tv65=size-2
 ...     tv60=//div[text()='60"']
 ...     tv70=//div[text()='70"']
 ...     tv75=//div[text()='75"']
 ...     tv85=//div[text()='85"']
 ...     projetor=//div[@class='css-gqywud']//div[1]
-...     tvbranca=//div[@class='css-12kphtp']//div[1]
-...     tvmarrom=(//div[@class='css-12kphtp']//div)[2]
-...     tvlaranja=(//div[@class='css-12kphtp']//div)[3]
+...     tvbranca=color-0
+...     tvmarrom=color-1
+...     tvlaranja=color-2
+
+# ...     tvbranca=//div[@class='css-12kphtp']//div[1]
+# ...     tvmarrom=(//div[@class='css-12kphtp']//div)[2]
+# ...     tvlaranja=(//div[@class='css-12kphtp']//div)[3]
+
 ...     tvneo=(//div[@class='css-h39e15'])[2]
 ...     tv2Qled=(//div[@class='css-h39e15'])[3]
-...     tv82=//div[text()='82"']
+# ...     tv82=//div[text()='82"']
 ...     tvcrystal=//div[@class='css-s1hnlm']//div[1]
 
 ***Variables***
          
-${setaesquerda}             (//*[name()='svg'][@stroke='currentColor'])[1]
-
-# ${tvtheframe}               //div[@class='css-gqywud']//div[1]
-# ${tv43}                     //div[text()='43"']
-# ${tv50}                     //div[text()='50"']  
-# ${tv55}                     //div[text()='55"']
-# ${tv65}                     //div[text()='65"']
-# ${tvbranca}                 //div[@class='css-12kphtp']//div[1]
-# ${tvmarrom}                (//div[@class='css-12kphtp']//div)[2] 
-# #//div[@class='css-suugc1']/following-sibling::div[1]
-# ${tvlaranja}                (//div[@class='css-12kphtp']//div)[3]
-# ${tv2Qled}                 (//div[@class='css-h39e15'])[3]
-# ${tv250}                   //div[text()='50"']  
-# ${tv255}                   //div[text()=' 55"']
-# ${tv260}                   //div[text()='60"']  
-# ${tv265}                   //div[text()='65"'] 
-# ${tv270}                   //div[text()='70"'] 
-# ${tvneo}                  (//div[@class='css-h39e15'])[2]    
-# ${tv365}                  //div[text()='65"']      
-# ${tv375}                  //div[text()='75"']  
-# ${tv385}                  //div[text()='85"']  
-# ${projetor}               //div[@class='css-h39e15']         
+${setaesquerda}             (//*[name()='svg'][@stroke='currentColor'])[1]       
 
 ***Keywords***
 

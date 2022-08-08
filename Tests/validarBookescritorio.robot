@@ -22,11 +22,11 @@ Scenario 1 - Validar Book do escritorio
     And fecho o modal
     And abro a lupa do Book do escritorio
     And abro o quick share
-    # And clico no botao compartilhar
-    # And vejo um toast de sucesso de missao
+    And clico no botao compartilhar
+    And mensagem de missao concluida é exibida
     And fecho o smarthings
-    And abro a lupa do Book do escritorio novamente
-    And clico em Dicas da sam
-    And clico no botao ver mais
-    And clico no botao fechar Dicas
+    # And abro a lupa do Book do escritorio novamente
+    # And clico em Dicas da sam
+    # And clico no botao ver mais
+    # And clico no botao fechar Dicas
 

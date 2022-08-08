@@ -1,3 +1,6 @@
+#Validar SoundBar da sala
+#Validar SoundBar do games
+
 *** Settings ***
 
 Resource       ../BasePage.robot 
@@ -8,25 +11,19 @@ Resource       ../BasePage.robot
 
 &{botao}
 
-...     verdetalhes=//p[text()='Ver mais detalhes']
-...     dicasam=//p[text()='Dicas da SAM']
+...     verdetalhes=modal-button-more_details
+...     dicasam=modal-button-sam_tips
 ...     vermais=//p[text()='Ver mais']
 ...     fechardicas=//button[@class='chakra-modal__close-btn css-gn0b9o']//*[name()='svg']
-...     abrirsmartthings=(//div[@class='css-15vvhi4']//div)[3]
+...     abrirsmartthings=//div[@id='modal-button-sam_tips']/following-sibling::div[1]
 ...     fechardetalhes=//button[@class='chakra-modal__close-btn css-gn0b9o']//*[name()='svg']
-...     mudarmodelo=//button[text()='Mudar modelo'] 
-
-
-***Variables***
-
-${modelosb}              //p[text()='Soundbar Samsung HW-Q990B']
-${descricaosb}           //p[text()='Uma experiência imersiva com áudio de 11.1.4 canais e suporte a recursos como Dolby Atmos Wireless, DTS Virtual:X, Q-Symphony, além de subwoofer sem fio preto e som Surround. Conecte a uma Smart TV Samsung 2022 sem uso de cabo HDMI e posicione as caixas onde quiser, com mais liberdade. E mais: Conexão Bluetooth e potência de 410W RMS.']
+...     mudarmodelo=description-change_model
 
 ***Keywords***
- 
-clico na lupa da soundbar
-    Execute Javascript  window.openWindow('device', '{"device":"livingroom/sb"}');
-    sleep                               5
+ #Validar SoundBar da sala
+# clico na lupa da soundbar
+#     Execute Javascript                  window.openWindow('device', '{"device":"livingroom/sb"}');
+#     Sleep                               5
 
 modal da soundbar é aberto
     Page Should Contain                 SoundBar da sala
@@ -55,3 +52,14 @@ clico no botao fechar Dicas
 
 troco de modelo
     Click Element                        ${botao.mudarmodelo}
+
+#Validar SoundBar do games
+clico na lupa da soundbar do games
+    Execute Javascript  window.openWindow('device', '{"device":"gaming/sb"}');
+    sleep                               5
+
+verifico o modelo da soundbar do games
+    Page Should Contain                 Soundbar da sala de jogos
+
+abro a lupa da soundbar do games
+     Execute Javascript  window.openWindow('device', '{"device":"gaming/sb"}');

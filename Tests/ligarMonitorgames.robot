@@ -5,14 +5,16 @@ Suite Teardown  Close Session
 
 ***Test Cases
 
-Scenario 1 - Ligar Soundbar da sala
-    [Tags]       test
+Scenario 1 - Ligar Monitor no games
+    [Tags]         test
     Given acesso a pagina
     And verifico a pagina inicial
     And pulo o tutorial
     And a tela inicial é exibida
-    And clico na lupa da soundbar
+    And eu clico no icone mapa
+    And vejo o mapa
+    And clico no comodo gaming
+    And clico na lupa do monitor do games
     And clico Abrir no SmartThings
-    And clico em ligar soundbar
-    Then mensagem de missao concluida é exibida 
-
+    And clico em ligar Monitor do games
+    Then mensagem de missao concluida é exibida

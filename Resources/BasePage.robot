@@ -9,29 +9,39 @@ Resource        Pages/IniciarNovaExperienciaPage.robot
 Resource        Pages/CoresPage.robot 
 
 Resource        Pages/LigarSBsalaPage.robot
-Resource        Pages/LigarTvSalaPage.robot
+Resource        Pages/LigarTvPage.robot
+Resource        Pages/LigarArSalaPage.robot
+Resource        Pages/LigarSTPage.robot
 
-Resource        Pages/ValidarSBsalaPage.robot
-Resource        Pages/ValidarS22salaPage.robot
-Resource        Pages/ValidarARsalaPage.robot
+Resource        Pages/ValidarSBPage.robot
+Resource        Pages/ValidarCelularesPage.robot
+Resource        Pages/ValidarARPage.robot
 Resource        Pages/ValidarTVSalaPage.robot
 
 Resource        Pages/ValidarTVescritorioPage.robot
-Resource        Pages/ValidarTabS8escritorioPage.robot
+Resource        Pages/ValidarTabS8Page.robot
 Resource        Pages/ValidarBookescritorioPage.robot
 Resource        Pages/ValidarMonitorEscritorioPage.robot
 
 
 Resource        Pages/ValidarTVGamesPage.robot
-Resource        Pages/ValidarARGamesPage.robot
-Resource        Pages/ValidarSBGamesPage.robot
+Resource        Pages/ValidarSBPage.robot
 Resource        Pages/ValidarMonitorGamesPage.robot
 
+Resource        Pages/ValidarTVquartoPage.robot
+Resource        Pages/ValidarGeladeiraPage.robot
+Resource        Pages/ValidarLavadoraPage.robot
+Resource        Pages/ValidarFreestylePage.robot
+
+Resource        Pages/ValidarTVacademiaPage.robot
+Resource        Pages/ValidarSTPage.robot
+Resource        Pages/ValidarBudsPage.robot
+Resource        Pages/ValidarWatchPage.robot
 
 ***Variables***
 ${BASEURL}          https://d2fnnoijlny9vq.cloudfront.net/
 ${BROWSER}          Chrome
-${TIMEOUT}          20
+${TIMEOUT}          10
 
 
 ***Keywords***

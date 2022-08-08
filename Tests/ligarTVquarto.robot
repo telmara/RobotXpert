@@ -5,14 +5,16 @@ Suite Teardown  Close Session
 
 ***Test Cases***
 
-Scenario 1 - Ligar Tv da sala
+Scenario 1 - Ligar Tv do quarto
     [Tags]          test
     Given acesso a pagina
     And verifico a pagina inicial
     And pulo o tutorial
     And a tela inicial é exibida
-    And clico na lupa da tv da sala
+    And eu clico no icone mapa
+    And vejo o mapa
+    And clico no comodo quarto
+    And clico na lupa da tv do quarto
     And clico Abrir tv no SmartThings
-    And clico em ligar tv da sala
-    # And troco de canal
-    # Then mensagem de missao concluida é exibida 
+    And clico em ligar tv do quarto
+    # Then toast de missao concluida é exibida

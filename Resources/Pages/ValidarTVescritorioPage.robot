@@ -11,7 +11,7 @@ Resource       ../BasePage.robot
 
 ***Variables***
 #tvcrystal                        
-#50, 55,65,75,82 
+#50, 55,65,75,85 
 #tvtheframe
 #43,50,55,65
 
@@ -42,8 +42,8 @@ troca modelo Crystal
     Click Element                       ${tvs.tv50}
     Click Element                       ${tvs.tv55}
     Click Element                       ${tvs.tv65}
-    Click Element                       ${tvs.tv75} 
-    Click Element                       ${tvs.tv82}
+    # Click Element                       ${tvs.tv75} 
+    # Click Element                       ${tvs.tv85}
 
 abro a lupa da tv do escritorio
     Execute Javascript                  window.openWindow('device', '{"device":"office/tv"}');

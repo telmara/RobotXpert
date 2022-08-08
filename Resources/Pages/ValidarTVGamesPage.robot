@@ -33,9 +33,8 @@ abro a lupa da tv do games
 
 clico em Abrir gaming Hub
     Click Element                       ${game.gaminghub}
-vejo o toast de missão cumprida
-    Wait Until Element Is Visible       ${game.missaocumprida}
-    Page Should Contain                 Veja suas conquistas
+# mensagem de missao concluida é exibida 
+#      Wait Until Element is Visible            ${st.toast}                    ${TIMEOUT}
 clico na lupa da tv do games novamente
     Execute Javascript                  window.openWindow('device', '{"device":"gaming/gtv"}');
     Sleep                               5

@@ -1,34 +1,44 @@
+#Ligar SoundBar da sala
+
+*** Settings ***
+
+Resource       ../BasePage.robot 
 
 ***Variables***
 
-${abrirsmartthings}          (//div[@class='css-15vvhi4']//div)[3]
-${ligarsb}                   //div[@id='power-button']
-${smartThingsIframe}        //iframe[@id='iframe-content'][@title='smart-things']
+&{st}
 
+...     smartthings=(//div[@class='css-15vvhi4']//div)[3]
+...     powerbutton=power-button
+...     iframe=//iframe[@id='iframe-content'][@title='smart-things'] 
+...     toast=//div[@aria-label='animation']
 
-                  ######### Não Funciona botão ligar (iframe)#########
+***Variables***
+
 ***Keywords***
-#Comentado pois ja tem a keyword no caso de teste de validacao do modal Soundbar da sala#
-# clico na lupa da soundbar
-#     Execute Javascript  window.openWindow('device', '{"device":"livingroom/sb"}');
-    
+#Ligar SoundBar da sala 
+clico na lupa da soundbar
+    Execute Javascript                  window.openWindow('device', '{"device":"livingroom/sb"}');
+    Sleep                               5
+
+
 clico Abrir no SmartThings
-     Click Element                       ${abrirsmartthings}
-     Sleep                               10        #TODO Remove this later
+     Wait Until Element is Visible            ${st.smartthings}
+     Click Element                            ${st.smartthings}
+     Sleep                                    10        #TODO Remove this later
 
 clico em ligar soundbar
 
-     Select Frame                             ${smartThingsIframe}
-     Sleep                                    6     #TODO Remove this later                       
-     Wait Until Element is Visible            ${ligarsb}              ${TIMEOUT}
-     click with Javascript                    ${ligarsb}
-     Sleep                                    4      #TODO Remove this later                    
+     Select Frame                             ${st.iframe}                     
+     Wait Until Element is Visible            ${st.powerbutton}              ${TIMEOUT}
+     click with Javascript                    ${st.powerbutton}                 
      Unselect Frame
 
 mensagem de missao concluida é exibida 
-     Wait Until Element is Visible            //div[@aria-label='animation']        ${TIMEOUT}
+     Wait Until Element is Visible            ${st.toast}                    ${TIMEOUT}
 
 click with Javascript
     [arguments]        ${webElement}
     ${ele}                                Get WebElement    ${webElement}
      Execute Javascript                    arguments[0].click();     ARGUMENTS    ${ele}
+

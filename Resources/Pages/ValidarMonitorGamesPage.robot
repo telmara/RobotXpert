@@ -20,3 +20,9 @@ verifico a descricao do produto monitor do games
 abro a lupa do monitor do games
     Execute Javascript                  window.openWindow('device', '{"device":"gaming/odyssey"}');
     Sleep                               5
+
+clico em ligar Monitor do games
+     Select Frame                             ${st.iframe}                     
+     Wait Until Element is Visible            ${st.powerbutton}              ${TIMEOUT}
+     click with Javascript                    ${st.powerbutton}                 
+     Unselect Frame
