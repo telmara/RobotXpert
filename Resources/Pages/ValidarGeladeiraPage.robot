@@ -28,12 +28,10 @@ troco de cor a geladeira
     Click Element                       ${cor.cinza}
     Click Element                       ${cor.cinzaclaro}
 
-
 #Ligar geladeira
 clico em Abrir no SmartThings
      Wait Until Element is Visible            ${btn.smartthings}
      Click Element                            ${btn.smartthings}
-     Sleep                                    10        #TODO Remove this later
 clico em ligar geladeira
      Select Frame                             ${st.iframe}                     
      Wait Until Element is Visible            ${btn.powercool}              ${TIMEOUT}
@@ -41,7 +39,7 @@ clico em ligar geladeira
      Unselect Frame
 
     Select Frame                             ${st.iframe}                     
-    Wait Until Element is Visible            ${btn.powerfreeze}              ${TIMEOUT}
+    Wait Until Element is Visible            ${btn.powerfreeze}            
     click with Javascript                    ${btn.powerfreeze}                 
     Unselect Frame
 

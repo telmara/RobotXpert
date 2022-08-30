@@ -20,7 +20,7 @@ Scenario 1 - Validar soundbar do games
     And verifico o modelo da soundbar do games
     And verifico a descricao do produto
     And fecho o modal
-    And abro a lupa da soundbar do games
+    And clico na lupa da soundbar do games
     And clico em Dicas da sam
     And clico no botao ver mais
     And clico no botao fechar Dicas

@@ -20,12 +20,13 @@ Scenario 1 - Validar Book do escritorio
     And verifico o modelo do Book do escritorio
     And verifico a descricao do produto Book do escritorio
     And fecho o modal
-    And abro a lupa do Book do escritorio
+    And clico na lupa do Book do escritorio
     And abro o quick share
     And clico no botao compartilhar
     And mensagem de missao concluida é exibida
     And fecho o smarthings
-    # And abro a lupa do Book do escritorio novamente
+    And fecho o modal
+    # And clico na lupa do Book do escritorio
     # And clico em Dicas da sam
     # And clico no botao ver mais
     # And clico no botao fechar Dicas

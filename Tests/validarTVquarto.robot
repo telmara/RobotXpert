@@ -23,7 +23,7 @@ Scenario 1 - Validar Tv do quarto
     And troca modelo Crystal
     And troca modelo The Frame
     And fecho o modal
-    And abro a lupa da tv do quarto
+    And clico na lupa da tv do quarto
     And clico em Dicas da sam
     And clico no botao ver mais
     And clico no botao fechar Dicas

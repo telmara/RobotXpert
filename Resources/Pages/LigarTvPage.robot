@@ -13,7 +13,6 @@
                   ######### Não Funciona troca de canal#########
 #Ligar TV da sala
 ***Keywords***
-      Sleep                                     10
 clico Abrir tv no SmartThings
       Click Element                          ${botao.abrirsmartthings} 
 
@@ -25,7 +24,7 @@ clico em ligar tv da sala
       Unselect Frame
 troco de canal 
       Select Frame                             ${st.iframe}
-      Wait Until Element is Visible             ${bt.canal}
+      Wait Until Element is Visible            ${bt.canal}
       click with Javascript                    ${bt.canal}
       Unselect Frame
 

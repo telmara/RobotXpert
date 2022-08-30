@@ -27,14 +27,7 @@ troco de modelo Neo Qled 4k
     Click Element                       ${tvs.tv55}    
     Click Element                       ${tvs.tv65}
 
-abro a lupa da tv do games
-    Execute Javascript                  window.openWindow('device', '{"device":"gaming/gtv"}');
-    Sleep                               5
-
 clico em Abrir gaming Hub
     Click Element                       ${game.gaminghub}
 # mensagem de missao concluida é exibida 
 #      Wait Until Element is Visible            ${st.toast}                    ${TIMEOUT}
-clico na lupa da tv do games novamente
-    Execute Javascript                  window.openWindow('device', '{"device":"gaming/gtv"}');
-    Sleep                               5

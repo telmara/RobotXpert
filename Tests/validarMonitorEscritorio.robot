@@ -21,6 +21,6 @@ Scenario 1 - Validar Monitor do escritorio
     And verifico a descricao do produto monitor
     And troco de cor o monitor
     And fecho o modal
-    And abro a lupa do monitor
+    And clico na lupa do monitor do escritorio
     And clico em Dicas da sam
     And clico no botao fechar Dicas

@@ -14,5 +14,5 @@ And clico em Iniciar nova experiencia
 clico no botao Reiniciar
     Click Element                           ${reiniciar} 
 tutorial é exibido
-    Wait Until Element Is Visible           ${mapa.samImg}                  7
+    Wait Until Element Is Visible           ${mapa.samImg}                   ${TIMEOUT}
     Page Should Contain                    Olá, que bom ter você por aqui!                  

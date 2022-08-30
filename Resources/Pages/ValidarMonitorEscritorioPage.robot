@@ -23,6 +23,3 @@ troco de cor o monitor
     Click Element                       ${cor.branca}
     Click Element                       ${cor.rosa}
     Click Element                       ${cor.azul}
-abro a lupa do monitor
-    Execute Javascript                  window.openWindow('device', '{"device":"office/monitor"}');
-    Sleep                               5

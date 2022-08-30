@@ -22,7 +22,7 @@ Scenario 1 - Validar Tv da sala
     And troca modelo Neo Qled
     And troca modelo projetor
     And fecho o modal
-    And abro a lupa da tv
+    And clico na lupa da tv da sala
     And clico em Dicas da sam
     And clico no botao ver mais
     And clico no botao fechar Dicas

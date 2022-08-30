@@ -14,7 +14,6 @@ Scenario 1 - Validar Tv do escritorio
     And eu clico no icone mapa
     And vejo o mapa
     And clico no comodo escritorio
-    And clico na lupa da tv do games
     And clico na lupa da tv do escritorio
     Then modal da tv do escritorio é aberto
     And clico em Ver mais detalhes
@@ -24,7 +23,7 @@ Scenario 1 - Validar Tv do escritorio
     And troca modelo The Frame
     And troca modelo Crystal
     And fecho o modal
-    And abro a lupa da tv do escritorio
+    And clico na lupa da tv do escritorio
     And clico em Dicas da sam
     And clico no botao ver mais
     And clico no botao fechar Dicas

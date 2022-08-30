@@ -25,7 +25,6 @@ clico na lupa da soundbar
 clico Abrir no SmartThings
      Wait Until Element is Visible            ${st.smartthings}
      Click Element                            ${st.smartthings}
-     Sleep                                    10        #TODO Remove this later
 
 clico em ligar soundbar
 

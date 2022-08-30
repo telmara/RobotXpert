@@ -20,7 +20,7 @@ Scenario 1 - Validar Tv da academia
     And verifico o modelo da tv da academia
     And verifico a descricao do produto tv da academia
     And fecho o modal
-    And abro a lupa da tv da academia
+    And clico na lupa da tv da academia
     And clico em rotacionar
     Then toast de missao concluida é exibida
     And clico na lupa da tv da academia novamente

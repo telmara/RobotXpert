@@ -17,7 +17,7 @@ Scenario 1 - Validar Tab S8 da academia
     And verifico o modelo do Tab S8
     And verifico a descricao do produto Tab S8
     And fecho o modal
-    And abro a lupa do Tab S8 da academia
+    And clico na lupa do Tab S8 da academia
     And clico em Dicas da sam
     And clico no botao ver mais
     And clico no botao fechar Dicas
@@ -31,7 +31,7 @@ Scenario 2 - Validar Tab S8 da area de lazer
     And verifico o modelo do Tab S8
     And verifico a descricao do produto Tab S8
     And fecho o modal
-    And abro a lupa do Tab S8 da area de lazer
+    And clico na lupa do Tab S8 da area de lazer
     And clico em Dicas da sam
     And clico no botao ver mais
     And clico no botao fechar Dicas
@@ -45,7 +45,7 @@ Scenario 3 - Validar Tab S8 da cozinha
     And verifico o modelo do Tab S8
     And verifico a descricao do produto Tab S8
     And fecho o modal
-    And abro a lupa do Tab S8 da cozinha
+    And clico na lupa do Tab S8 da cozinha
     And clico em Dicas da sam
     And clico no botao ver mais
     And clico no botao fechar Dicas
@@ -59,7 +59,7 @@ Scenario 4 - Validar Tab S8 do escritorio
     And verifico o modelo do Tab S8
     And verifico a descricao do produto Tab S8
     And fecho o modal
-    And abro a lupa do Tab S8 do escritorio
+    And clico na lupa do Tab S8 do escritorio
     And clico em Dicas da sam
     And clico no botao ver mais
     And clico no botao fechar Dicas

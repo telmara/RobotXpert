@@ -44,7 +44,3 @@ troca modelo Crystal
     Click Element                       ${tvs.tv65}
     # Click Element                       ${tvs.tv75} 
     # Click Element                       ${tvs.tv85}
-
-abro a lupa da tv do escritorio
-    Execute Javascript                  window.openWindow('device', '{"device":"office/tv"}');
-    Sleep                               5

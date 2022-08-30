@@ -18,7 +18,7 @@ Scenario 1 - Validar AR do escritorio
     And verifico o modelo do ar do escritorio
     And verifico a descricao do produto ar
     And fecho o modal
-    And abro a lupa do ar do escritorio
+    And clico na lupa do ar do escritorio
     And clico em Dicas da sam
     And clico no botao ver mais
     And clico no botao fechar Dicas

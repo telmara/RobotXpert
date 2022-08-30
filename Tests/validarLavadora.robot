@@ -25,13 +25,7 @@ Scenario 1 - Validar maquina de lavar na lavanderia
 
 Scenario 2 - Ligar maquina da lavar na lavanderia
     [Tags]       test
-    Given acesso a pagina
-    And verifico a pagina inicial
-    And pulo o tutorial
-    And a tela inicial é exibida
-    And eu clico no icone mapa
-    And vejo o mapa
-    And clico no comodo lavanderia
+    #Background
     And clico na lupa da lavadora da lavanderia
     And clico em Abrir no SmartThings
     And clico em ligar lavadora

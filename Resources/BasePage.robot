@@ -10,7 +10,7 @@ Resource        Pages/CoresPage.robot
 
 Resource        Pages/LigarSBsalaPage.robot
 Resource        Pages/LigarTvPage.robot
-Resource        Pages/LigarArSalaPage.robot
+Resource        Pages/LigarArPage.robot
 Resource        Pages/LigarSTPage.robot
 
 Resource        Pages/ValidarSBPage.robot
@@ -39,9 +39,9 @@ Resource        Pages/ValidarBudsPage.robot
 Resource        Pages/ValidarWatchPage.robot
 
 ***Variables***
-${BASEURL}          https://d2fnnoijlny9vq.cloudfront.net/
+${BASEURL}          https://d2fnnoijlny9vq.cloudfront.net/?sub=seda
 ${BROWSER}          Chrome
-${TIMEOUT}          10
+${TIMEOUT}          15
 
 
 ***Keywords***

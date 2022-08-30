@@ -21,11 +21,11 @@ Scenario 1 - Validar Tv do games
     And verifico a descricao do produto tv do games
     And troco de modelo Neo Qled 4k
     And fecho o modal
-    And abro a lupa da tv do games
+    And clico na lupa da tv do games
     And clico em Abrir gaming Hub
-    Then vejo o toast de missão cumprida
-    And clico na lupa da tv do games novamente
+    Then toast de missao concluida é exibida
+    And clico na lupa da tv do games
     And clico em Dicas da sam
     And clico no botao ver mais
     And clico no botao fechar Dicas
-
+    

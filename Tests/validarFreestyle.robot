@@ -11,9 +11,6 @@ Scenario 1 - Validar freestyle da area de lazer
     And verifico a pagina inicial
     And pulo o tutorial
     And a tela inicial é exibida
-    And eu clico no icone mapa
-    And vejo o mapa
-    And clico no comodo getTogether
     And clico na lupa da freestyle da area de lazer
     Then modal da freestyle é aberto
     And clico em Ver mais detalhes
@@ -58,4 +55,3 @@ Scenario 4 - Ligar freestyle do lounge
     And clico na lupa da freestyle do lounge
     And clico em Abrir no SmartThings
     And clico em ligar freestyle
-    Then mensagem de missao concluida é exibida 

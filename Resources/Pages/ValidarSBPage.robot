@@ -8,7 +8,6 @@ Resource       ../BasePage.robot
 ###Aqui eu chamando a main para globalizar as informacoes###
 
 ***Variables***
-
 &{botao}
 
 ...     verdetalhes=modal-button-more_details
@@ -21,10 +20,6 @@ Resource       ../BasePage.robot
 
 ***Keywords***
  #Validar SoundBar da sala
-# clico na lupa da soundbar
-#     Execute Javascript                  window.openWindow('device', '{"device":"livingroom/sb"}');
-#     Sleep                               5
-
 modal da soundbar é aberto
     Page Should Contain                 SoundBar da sala
 clico em Ver mais detalhes
@@ -33,12 +28,11 @@ verifico o modelo da soundbar
     Page Should Contain                 Soundbar Samsung HW-Q990B
 verifico a descricao do produto
     Page Should Contain                 Uma experiência imersiva com áudio de 11.1.4 canais e suporte a recursos como Dolby Atmos Wireless, DTS Virtual:X, Q-Symphony, além de subwoofer sem fio preto e som Surround. Conecte a uma Smart TV Samsung 2022 sem uso de cabo HDMI e posicione as caixas onde quiser, com mais liberdade. E mais: Conexão Bluetooth e potência de 410W RMS.
-    Sleep                               5
 fecho o modal
-    Click Element                       ${botao.fechardetalhes}
-    Sleep                               5
+    Press Keys                           None               ESC
+    # Click Element                       ${botao.fechardetalhes}
 abro a lupa da soundbar
-     Execute Javascript  window.openWindow('device', '{"device":"livingroom/sb"}');
+     Execute Javascript                 window.openWindow('device', '{"device":"livingroom/sb"}');
 
 clico em Dicas da sam
      Click Element                       ${botao.dicasam}
@@ -55,11 +49,8 @@ troco de modelo
 
 #Validar SoundBar do games
 clico na lupa da soundbar do games
-    Execute Javascript  window.openWindow('device', '{"device":"gaming/sb"}');
+    Execute Javascript                  window.openWindow('device', '{"device":"gaming/sb"}');
     sleep                               5
 
 verifico o modelo da soundbar do games
     Page Should Contain                 Soundbar da sala de jogos
-
-abro a lupa da soundbar do games
-     Execute Javascript  window.openWindow('device', '{"device":"gaming/sb"}');

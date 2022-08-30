@@ -10,7 +10,7 @@ ${abretermos}            //p[text()='Termos de Uso e Política de Privacidade']
 ${fechatermos}           //button[@class='chakra-modal__close-btn css-t3vzcg']
 ${abrelicença}           //p[text()='Licença de código aberto']   
 ${fechalicença}          //button[@class='chakra-modal__close-btn css-t3vzcg']
-${selecionaLingua}       id:menu-button-67
+${selecionaLingua}       //button[contains(@class,'chakra-button chakra-menu__menu-button')]
 ${esp}                   //button[text()='Español']
 ${port}                  //button[text()='Português']         
 ${musica}                //span[@class='chakra-switch__track css-1lklytl']//span
